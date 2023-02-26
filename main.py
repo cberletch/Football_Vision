@@ -1,6 +1,10 @@
 import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
+from skimage.filters import threshold_local
+import imutils 
+from skimage import measure
+import tensorflow as tf
 
 img = cv.imread("images\QBView1.png")
 
@@ -10,3 +14,5 @@ plt.imshow(RGB_img)
 
 plt.waitforbuttonpress()
 plt.close('all')
+
+
